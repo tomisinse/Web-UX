@@ -3,31 +3,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
+    background-color: #222;
+    padding: 1em;
+    text-align: center;
 }
 
-nav ul {
+.navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 2em;
 }
 
-nav a {
-    color: white;
+.navigation a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 main {
     padding: 2em;
 }
 
-section {
+.task-section, .contact-section {
     margin-bottom: 2em;
 }
 
@@ -35,13 +40,73 @@ h1, h2 {
     text-align: center;
 }
 
-ul {
+.tasks-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.task-column {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
     list-style: none;
     padding: 0;
+}
+
+.task-list li {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+    background-color: #ddd;
+}
+
+.action-button {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em 2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #f1f1f1;
+    background-color: #222;
+    color: #fff;
 }

@@ -9,48 +9,41 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="tasks">
+        <section class="task-section">
             <h1>Organise Your Day</h1>
-            <div>
-                <h2>Urgent Tasks</h2>
-                <ul id="urgent-tasks"></ul>
+            <div class="tasks-container">
+                <div class="task-column">
+                    <h2>Urgent Tasks</h2>
+                    <ul id="urgent-tasks" class="task-list"></ul>
+                </div>
+                <div class="task-column">
+                    <h2>Non-Urgent Tasks</h2>
+                    <ul id="non-urgent-tasks" class="task-list"></ul>
+                </div>
+                <div class="task-column">
+                    <h2>Completed Tasks</h2>
+                    <ul id="completed-tasks" class="task-list"></ul>
+                </div>
             </div>
-            <div>
-                <h2>Non-Urgent Tasks</h2>
-                <ul id="non-urgent-tasks"></ul>
-            </div>
-            <div>
-                <h2>Completed Tasks</h2>
-                <ul id="completed-tasks"></ul>
-            </div>
-            <button id="add-task-btn">Add Task</button>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
+            <button id="add-task-btn" class="action-button">Add Task</button>
         </section>
     </main>
 
     <footer>
-        <p>Terms of service | Privacy Policy | &copy; 2024 TomisinSE</p>
+        <p>
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Privacy Policy</a> | 
+            &copy; 2024 TomisinSE
+        </p>
     </footer>
 
     <script src="script.js"></script>
